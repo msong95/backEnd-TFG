@@ -1,0 +1,25 @@
+@url = http://localhost:3000/api
+GET {{url}}/usuarios
+
+###
+GET {{url}}/preguntas
+
+###
+POST {{url}}/auth/login
+Content-Type: application/json
+
+{
+
+}
+
+###
+POST {{url}}/auth/registro
+Content-Type: application/json
+
+{
+    "username": "deivit",
+    "email": "deivit@deivit.es",
+    "password":"123"
+}
+###
+GET http://localhost:3000/
