@@ -1,42 +1,42 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-const preguntasMock = require('../../mocks/preguntas.json');
-const PreguntaModel = require('../../models/pregunta.model')
-const mongoose = require('mongoose');
-const Pregunta = mongoose.model('Pregunta',PreguntaModel)
-
-
+const preguntasMock = require("../../mocks/preguntas.json");
+const PreguntaModel = require("../../models/pregunta.model");
+const mongoose = require("mongoose");
+const Pregunta = mongoose.model("Pregunta", PreguntaModel);
 
 /* GET home page. */
-router.get('/',  async (req, res) => {
-    const response = await Pregunta.find({})
+router.get("/", async (req, res) => {
+  try {
+    const response = await Pregunta.find({});
     let preguntas = {};
     let arrPreguntas = [];
-    let secciones = []
+    let secciones = [];
 
     response.forEach(pregunta => {
-        secciones.push(pregunta._doc.seccion); // recoge todos los section
-        secciones = secciones.filter((seccion, index) => secciones.indexOf(seccion) === index); // elimina duplicados
+      secciones.push(pregunta._doc.seccion); // recoge todos los section
+      secciones = secciones.filter(
+        (seccion, index) => secciones.indexOf(seccion) === index
+      ); // elimina duplicados
 
-        //preguntas[pregunta._doc.seccion] = []; // inicializa el objeto con la key del section
+      //preguntas[pregunta._doc.seccion] = []; // inicializa el objeto con la key del section
 
-        //preguntas[pregunta._doc.seccion].push(pregunta)
-
-    })
-    for(let seccion of secciones){
-        preguntas[seccion] = []
+      //preguntas[pregunta._doc.seccion].push(pregunta)
+    });
+    for (let seccion of secciones) {
+      preguntas[seccion] = [];
     }
 
     response.forEach(pregunta => {
-        preguntas[pregunta._doc.seccion].push(pregunta)
-    })
+      preguntas[pregunta._doc.seccion].push(pregunta);
+    });
 
-    res.json(preguntas)
-
+    res.json(preguntas);
+  } catch (error) {
+      res.json(error)
+  }
 });
 
-function secciones() {
-
-}
+function secciones() {}
 
 module.exports = router;
