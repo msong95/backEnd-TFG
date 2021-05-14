@@ -9,6 +9,8 @@ POST {{url}}/auth/login
 Content-Type: application/json
 
 {
+    "email": "deivit@deivit.es",
+    "password":"123sa"
 
 }
 
