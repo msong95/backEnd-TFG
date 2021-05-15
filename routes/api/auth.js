@@ -34,7 +34,7 @@ router.post("/registro", async (req, res) => {
           })
           .status(201)
       )
-      .catch(() => res.send("Error al crear un usuario").status(400));
+      .catch((error) => res.json({mensaje: "Error al crear un usuario", error}).status(400));
   });
 });
 
