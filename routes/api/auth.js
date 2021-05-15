@@ -5,15 +5,20 @@ const { User } = require("../../models/usuario.model");
 const Usuario = mongoose.model("Usuario", User);
 const uuid = require("uuid").v4();
 const bcrypt = require("bcryptjs");
+const jwt = require('jsonwebtoken')
 
 router.post("/login", async (req, res) => {
   const response = await Usuario.findOne({ email: req.body.email }).exec();
   let iguales;
   if(response){
       bcrypt.compare(req.body.password, response.password, (err, response) => {
-        response ? res.json({message: 'login correcto'}) : res.json({message: 'login incorrecto'})
-      })
+        const token = jwt.sign({ id: response.id, role: 'admin' } , 'olakease');
+        response ? res.json({token}) : res.json({error: 'Login incorrecto'})
 
+
+
+        // response ? res.json({message: 'login correcto'}) : res.json({message: 'login incorrecto'})
+      })
   }
 
 });
