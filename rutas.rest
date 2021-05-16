@@ -10,7 +10,7 @@ Content-Type: application/json
 
 {
     "email": "deivit@deivit.es",
-    "password":"123sa"
+    "password":"123"
 
 }
 
@@ -23,5 +23,16 @@ Content-Type: application/json
     "email": "deivit@deivit.es",
     "password":"123"
 }
+
 ###
-GET http://localhost:3000/
+GET {{url}}/brecha
+
+###
+POST {{url}}/brecha
+Content-Type: application/json
+
+{
+    "username": "bcalderbank2",
+    "fecha": "7/14/2020",
+    "brecha": "nivel alto"
+}

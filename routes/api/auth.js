@@ -13,12 +13,14 @@ router.post("/login", async (req, res) => {
   if(response){
       bcrypt.compare(req.body.password, response.password, (err, response) => {
         const token = jwt.sign({ id: response.id, role: 'admin' } , 'olakease');
-        response ? res.json({token}) : res.json({error: 'Login incorrecto'})
+        res.json({token})
 
 
 
         // response ? res.json({message: 'login correcto'}) : res.json({message: 'login incorrecto'})
       })
+  } else {
+    res.json({error: 'Login incorrecto'})
   }
 
 });
