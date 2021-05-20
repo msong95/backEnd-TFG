@@ -1,0 +1,620 @@
+[
+  {
+    "username": "usuario1",
+    "id": "brecha1",
+    "brecha": "Brecha de nivel alto",
+    "fecha": "2021-01-02"
+  },
+  {
+    "username": "usuario2",
+    "id": "brecha2",
+    "brecha": "Brecha de nivel medio",
+    "fecha": "2021-01-02"
+  },
+  {
+    "username": "usuario3",
+    "id": "brecha3",
+    "brecha": "Brecha de nivel bajo",
+    "fecha": "2021-01-02"
+  },
+  {
+    "id": "e2599f89-9624-4064-bc5d-8b74f3d65ff2",
+    "username": "lschwand0",
+    "fecha": "8/28/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "3545bab3-6661-420b-a14e-669a20bad2ef",
+    "username": "alillgard1",
+    "fecha": "10/13/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "81b007e6-1fdb-4057-a147-111ad1ad50b3",
+    "username": "bcalderbank2",
+    "fecha": "7/14/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "42ef33f9-d432-4cb9-9610-e3a0365d7b91",
+    "username": "dthurlby3",
+    "fecha": "10/16/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "2c512f8d-a58b-4c65-a5c8-700cf3ce15da",
+    "username": "tdemaine4",
+    "fecha": "3/27/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "42a249f3-40eb-4a73-8a0a-c923a4f754eb",
+    "username": "csykora5",
+    "fecha": "8/10/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "73875a78-1348-43c1-8b33-3057e2d3601c",
+    "username": "cwycliffe6",
+    "fecha": "2/13/2021",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "a1cd899d-553c-4dab-8718-354863c930aa",
+    "username": "jsorel7",
+    "fecha": "1/10/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "27f7e434-88d8-4ecf-b3b4-6eed9b76b1c7",
+    "username": "mchester8",
+    "fecha": "9/8/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "fd79894f-7ecb-4847-9d04-35372e19d67b",
+    "username": "mmccue9",
+    "fecha": "10/10/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "55f64b5c-4156-44d3-8bff-b21c58f90dfe",
+    "username": "rmorana",
+    "fecha": "11/27/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "f4ccdd23-4feb-45be-b3c7-1c0cbe03f53b",
+    "username": "dmonkleyb",
+    "fecha": "3/11/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "c2d59443-e82a-4f3c-bb22-80fb9dfc81e6",
+    "username": "rbanatc",
+    "fecha": "3/17/2021",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "704d99af-a70e-4703-86bc-b385548bac18",
+    "username": "dlowried",
+    "fecha": "12/12/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "bafad5fe-2605-4c59-ae6a-2fdc62e0ae12",
+    "username": "gailmere",
+    "fecha": "7/13/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "b20f1db9-cd76-467f-bdb4-af0ecb0b9ad9",
+    "username": "lakramf",
+    "fecha": "7/19/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "576e956e-ab66-4dd9-ab86-ed9eff16ba64",
+    "username": "zgrigorg",
+    "fecha": "10/24/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "126592e6-bcc1-40ec-85cf-75b66fd246be",
+    "username": "gdallinderh",
+    "fecha": "6/5/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "ce00243b-6d54-40eb-ab3c-b4403c579f7c",
+    "username": "hhutcheonsi",
+    "fecha": "10/25/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "6bbc0651-81f9-4aff-9610-b7ff504c9c79",
+    "username": "mrewbottomj",
+    "fecha": "1/25/2021",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "7b8a3de5-c323-48b5-a4cf-e596543d5fc2",
+    "username": "amckeurtank",
+    "fecha": "7/28/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "910abd36-bf86-451e-a212-58e4544c0de1",
+    "username": "pboasl",
+    "fecha": "5/19/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "acce8c3e-ab51-4a32-a207-5ae482a3f9dd",
+    "username": "hcasellim",
+    "fecha": "8/7/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "4982f20c-b59d-4e8c-9f36-29b1ea81825e",
+    "username": "ngoadyn",
+    "fecha": "1/15/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "99752dcc-4e45-4e39-8bed-e7e0a8e0e9cb",
+    "username": "awhealo",
+    "fecha": "2/26/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "64488830-97ee-4af3-889b-604f2483ba5a",
+    "username": "maronsp",
+    "fecha": "3/13/2021",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "8eb58604-4139-46ef-b540-9b473335858b",
+    "username": "rsykoraq",
+    "fecha": "10/20/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "68ffbf55-b7ad-42fd-9bc1-6cb3d364f01f",
+    "username": "btrustramr",
+    "fecha": "6/23/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "e4f06bed-fc68-45bf-8273-bd20afb806e0",
+    "username": "dlambarths",
+    "fecha": "9/12/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "0e4db51c-b50f-4278-a2da-6ed0601f6c59",
+    "username": "lsomerbellt",
+    "fecha": "8/4/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "24f79000-0bad-49c5-8dc5-7e8d462c730e",
+    "username": "wbirksu",
+    "fecha": "8/14/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "bd4f3da7-4221-4f17-83ac-dd03b25598a6",
+    "username": "tdonkersleyv",
+    "fecha": "1/6/2021",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "43ec0bea-8dcb-43ef-93fe-034ee904d08c",
+    "username": "lpounderw",
+    "fecha": "10/9/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "890df0b5-19d1-4df7-80c0-fe3440d305eb",
+    "username": "cmallabarx",
+    "fecha": "5/17/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "f7247b1b-1104-476f-a6dd-9bfb15479729",
+    "username": "ptolemany",
+    "fecha": "6/23/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "25dd8d1c-fc0d-4287-bda0-e7346695482f",
+    "username": "glaxtonnez",
+    "fecha": "6/24/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "82a2b5fc-de21-45c5-903c-3d018f7335bf",
+    "username": "kraynes10",
+    "fecha": "5/13/2021",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "5e025bb0-c4ca-44fa-8ad4-0c8513b492be",
+    "username": "agilluley11",
+    "fecha": "5/24/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "8462524d-81cb-4499-98f3-be7e84d07508",
+    "username": "fhowells12",
+    "fecha": "11/1/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "6a418562-722b-4994-9b21-474d6342defe",
+    "username": "bconnikie13",
+    "fecha": "9/6/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "8710527e-353d-4537-acdb-fc1790b06424",
+    "username": "blindenblatt14",
+    "fecha": "6/4/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "2219b445-66ad-49a2-982b-f15fc3d2a952",
+    "username": "jverduin15",
+    "fecha": "8/8/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "ee42ff78-5db8-4ca5-866d-2e75353dbf19",
+    "username": "fgrim16",
+    "fecha": "12/3/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "f9fb99fa-1be9-4dc1-891c-4581954e1060",
+    "username": "paustwick17",
+    "fecha": "2/15/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "46c53aa2-2e87-454c-9107-c1496968c3f4",
+    "username": "fmarsay18",
+    "fecha": "11/12/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "64d23aa9-7766-493d-bea8-5f91357dfb46",
+    "username": "lcaroll19",
+    "fecha": "2/14/2021",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "cf5bad80-874f-46b9-8db5-629f33b56ac1",
+    "username": "cabba1a",
+    "fecha": "9/13/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "a657df4b-e1d3-4ac6-a20f-0f7fae92dd84",
+    "username": "shogbourne1b",
+    "fecha": "6/2/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "d91af49c-ffa1-4382-aef8-d20c267bde00",
+    "username": "bvannet1c",
+    "fecha": "5/21/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "b742eb23-6296-4a01-b085-86eeca657536",
+    "username": "bminkin1d",
+    "fecha": "4/25/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "2ababec6-f5ed-4b65-986d-d6530cdb5fad",
+    "username": "dimlach1e",
+    "fecha": "2/7/2021",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "78106244-07c9-4d79-bad8-b9de3c0c7c41",
+    "username": "ghigounet1f",
+    "fecha": "8/31/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "129361a3-3e76-4805-a744-c83476b8e864",
+    "username": "jgallaher1g",
+    "fecha": "8/14/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "461f0fa5-44b1-4b37-a7a2-69f5472c43aa",
+    "username": "cdobrowolski1h",
+    "fecha": "2/8/2021",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "23303ace-f2d1-41ea-805c-48b7c90c3c3d",
+    "username": "tclemmitt1i",
+    "fecha": "9/23/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "8845670c-82ca-4841-8f9d-e32d1886d6b4",
+    "username": "ccapnerhurst1j",
+    "fecha": "3/6/2021",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "b22d86c4-ad1f-448a-b72e-d78f9b0d9b0d",
+    "username": "cbringloe1k",
+    "fecha": "12/17/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "17de4ef8-3495-4311-ad97-06e39f2fc49c",
+    "username": "ekeynes1l",
+    "fecha": "12/4/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "6ed8e952-b183-44a9-8099-c9c46c5d01d3",
+    "username": "hlindenstrauss1m",
+    "fecha": "10/31/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "9af8842d-5847-4562-8d46-18609d5b2ce2",
+    "username": "fkingsman1n",
+    "fecha": "2/22/2021",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "d747ef6d-16b0-4177-be67-23b30286752f",
+    "username": "rillyes1o",
+    "fecha": "2/27/2021",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "73dcfe48-6cf5-4e5c-9ec6-51f8458c2397",
+    "username": "hquartly1p",
+    "fecha": "5/14/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "c19ea588-04c5-466b-8e34-f2a23c4211b8",
+    "username": "wrebbeck1q",
+    "fecha": "2/28/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "78c8c4c2-d072-402b-a814-5298fdcc9c67",
+    "username": "lcapineer1r",
+    "fecha": "1/6/2021",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "d1a239d2-847e-42bb-94c4-e93bf668b613",
+    "username": "amaxsted1s",
+    "fecha": "2/12/2021",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "5837b122-258a-4088-8957-a29a972b0a30",
+    "username": "jdionisetti1t",
+    "fecha": "11/28/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "5458540d-99cb-40bc-b8f8-c7aea2338684",
+    "username": "cwilde1u",
+    "fecha": "4/10/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "b5a7100d-ef05-4fd0-a12f-2ff1869069e2",
+    "username": "mbougourd1v",
+    "fecha": "5/29/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "03e8b3da-7969-4a22-8411-a302d4c85320",
+    "username": "acody1w",
+    "fecha": "12/2/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "e926b69f-b6c3-4e19-96f0-dd41a38aa841",
+    "username": "gsuttling1x",
+    "fecha": "10/10/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "36989a65-68f0-460a-afaf-31a2aad81673",
+    "username": "istallen1y",
+    "fecha": "10/25/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "60797aef-99b1-402e-9870-f95d06141962",
+    "username": "bgeorgescu1z",
+    "fecha": "10/28/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "5f30c45d-924c-4b32-bc52-c985983271d5",
+    "username": "jcullip20",
+    "fecha": "1/18/2021",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "cc235a99-f1ad-48cf-9dc0-011ecb6731a1",
+    "username": "lgribble21",
+    "fecha": "12/21/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "d74a20a7-0e42-4094-9452-0cc1121f96b4",
+    "username": "lcaston22",
+    "fecha": "8/10/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "8d7f693b-e53c-4c9d-bbcd-9a76ec032a17",
+    "username": "mower23",
+    "fecha": "8/3/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "5b7587b8-2503-46cf-a788-ef4e44d76f9d",
+    "username": "ckrysztofowicz24",
+    "fecha": "7/31/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "2f340501-5e09-40af-9ee3-95506f2f5028",
+    "username": "vcollingdon25",
+    "fecha": "11/21/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "008fb20a-7110-48cd-a8e9-f0781c92b4e1",
+    "username": "asagg26",
+    "fecha": "8/23/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "b5860bae-d35b-47b0-b6bb-f8ffb99d1b37",
+    "username": "rmccobb27",
+    "fecha": "1/10/2021",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "37eecff5-ba87-46da-bfe9-d039b8a17db9",
+    "username": "dantonovic28",
+    "fecha": "4/17/2021",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "7d9f62d7-d656-4ad3-84e2-e92c777d0b1b",
+    "username": "lmitie29",
+    "fecha": "8/20/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "91c74131-4c5d-47b2-a04b-7d75045e0724",
+    "username": "blefranc2a",
+    "fecha": "10/8/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "72cc7622-04c8-4a7a-a9dd-52b9b5a2f5c1",
+    "username": "cklimus2b",
+    "fecha": "1/28/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "3abbe008-cf44-4865-80c8-aadb96af1568",
+    "username": "jdanelut2c",
+    "fecha": "8/10/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "d072301a-977d-47b9-b552-9f9faed5650c",
+    "username": "zvasyaev2d",
+    "fecha": "8/23/2020",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "bc14510a-fdf0-42d1-bf3b-ecfea20d3644",
+    "username": "tgaucher2e",
+    "fecha": "5/2/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "3c3c5ba3-655d-4769-9be3-11869824c34f",
+    "username": "vkamenar2f",
+    "fecha": "3/27/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "412a1ac2-ad5c-46bc-a5da-0c51d458987c",
+    "username": "rclemenzo2g",
+    "fecha": "1/23/2021",
+    "brecha": "nivel bajo"
+  },
+  {
+    "id": "96b990d5-496d-44d6-a335-84bf00d4f0d2",
+    "username": "mcritchard2h",
+    "fecha": "11/9/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "cf037189-226a-482c-a566-3cebc65dc093",
+    "username": "tlago2i",
+    "fecha": "2/28/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "17f18968-f417-4a20-a1c3-93c0e174b804",
+    "username": "jstood2j",
+    "fecha": "7/17/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "e0dee240-ff11-491b-90fe-51ade4dedac7",
+    "username": "ktunney2k",
+    "fecha": "11/18/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "4757ffb3-2360-471d-8e4f-3907a58e0ac9",
+    "username": "fpowlesland2l",
+    "fecha": "12/23/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "f2de8037-0f47-484b-843a-9dfa1cbb8732",
+    "username": "mbotly2m",
+    "fecha": "11/4/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "844f0967-7578-4904-a627-d7cecec6e589",
+    "username": "srichemond2n",
+    "fecha": "1/17/2021",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "e6b1e9bc-1ccd-4c83-89f2-d8d34d0e689a",
+    "username": "smcginly2o",
+    "fecha": "11/29/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "6bcb6c09-a414-4f8b-accf-235ac7bbc13f",
+    "username": "sserfati2p",
+    "fecha": "12/15/2020",
+    "brecha": "nivel alto"
+  },
+  {
+    "id": "44c1d3f7-4b7f-476d-ac25-91e61931e66b",
+    "username": "flomas2q",
+    "fecha": "10/21/2020",
+    "brecha": "nivel medio"
+  },
+  {
+    "id": "c9d22c06-8346-48c6-bc10-846e41d1789f",
+    "username": "lmapam2r",
+    "fecha": "9/29/2020",
+    "brecha": "nivel medio"
+  }
+]

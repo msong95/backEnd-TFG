@@ -6,8 +6,10 @@ let uri = '';
 switch (process.env.ENVIROMENT) {
     case 'dev':
         uri = 'mongodb+srv://nodejs:nodejs214365@cluster0.zkdg2.mongodb.net/app-tfg?retryWrites=true&w=majority';
+        break;
     case 'local':
         uri = 'mongodb://localhost:27017/app-brecha';
+        break;
 }
 
 mongoose
@@ -16,7 +18,7 @@ mongoose
     useUnifiedTopology: true
   })
   .then(response => {
-    if (response) console.log(`base de datos conectada, entorno -> ${process.env.ENVIROMENT} -> url: ${url}`);
+    if (response) console.log(`base de datos conectada, entorno -> ${process.env.ENVIROMENT} -> url: ${uri}`);
   })
   .catch(err => err ? console.error('error en la conexion a la base de datos') : null);
 
