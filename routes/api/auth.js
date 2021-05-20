@@ -24,23 +24,27 @@ router.post("/login", async (req, res) => {
 });
 
 router.post("/registro", async (req, res) => {
-  req.body.id = uuid;
-  await bcrypt.hash(req.body.password, 10, (err, hass) => {
-    req.body.password = hass;
-    let newUser = new Usuario(req.body);
-    newUser
-      .save()
-      .then(() =>
-        res
-          .json({
-            message: "Usuario creado",
-            headers: req.headers,
-            body: req.body
-          })
-          .status(201)
-      )
-      .catch((error) => res.json({mensaje: "Error al crear un usuario", error}).status(400));
-  });
+  try {
+    const exist = await Usuario.find({email: req.body.email})
+
+    if(exist.length > 0) throw {message: 'este email ya existe en la base de datos'}
+  
+    req.body.id = uuid;
+    const salt = bcrypt.genSaltSync(10);
+    req.body.password = bcrypt.hashSync(req.body.password, salt);
+    
+    const newUser = new Usuario(req.body);
+    await newUser.save();
+    res.json({
+      message: "Usuario creado",
+      headers: req.headers,
+      body: req.body
+    }).status(201);
+  } catch (error) {
+    res.send(error)
+  }
+
+
 });
 
 module.exports = router;
