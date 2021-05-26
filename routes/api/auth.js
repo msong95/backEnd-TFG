@@ -9,44 +9,42 @@ const jwt = require('jsonwebtoken')
 
 router.post("/login", async (req, res) => {
   const response = await Usuario.findOne({ email: req.body.email }).exec();
-  let iguales;
+  console.log(response);
+ 
   if(response){
-      bcrypt.compare(req.body.password, response.password, (err, response) => {
-        const token = jwt.sign({ id: response.id, role: 'admin' } , 'olakease');
-        res.json({token})
-
-
-
-        // response ? res.json({message: 'login correcto'}) : res.json({message: 'login incorrecto'})
-      })
-  } else {
-    res.json({error: 'Login incorrecto'})
+    bcrypt.compare(req.body.password, response.password, (err, response) => {
+     const token = jwt.sign({ id: response.id, role: 'admin' } , 'olakease');
+      response ? res.json({token}) : res.json({error: '0'})
+      // response ? res.json({message: 'login correcto'}) : res.json({message: 'login incorrecto'})
+    })
+  }else{
+    const token =null;
+      response ? res.json({token}) : res.json({error: '1'})
   }
 
 });
 
 router.post("/registro", async (req, res) => {
-  try {
-    const exist = await Usuario.find({email: req.body.email})
+ 
+  //buscamos si existe
+  const response = await Usuario.findOne({ email: req.body.email }).exec();
+  console.log(response);
 
-    if(exist.length > 0) throw {message: 'este email ya existe en la base de datos'}
-  
-    req.body.id = uuid;
-    const salt = bcrypt.genSaltSync(10);
-    req.body.password = bcrypt.hashSync(req.body.password, salt);
-    
-    const newUser = new Usuario(req.body);
-    await newUser.save();
-    res.json({
-      message: "Usuario creado",
-      headers: req.headers,
-      body: req.body
-    }).status(201);
-  } catch (error) {
-    res.send(error)
+  //si existe el usuario entonces no se puede registrar
+  if(response){
+    const token=null;
+    response ? res.json({token}) : res.json({error: '1'})
+    // en caso contrario si se puede
+  }else{
+    const token=null;
+      req.body.id = uuid;
+      await bcrypt.hash(req.body.password, 10, (err, hass) => {
+        req.body.password = hass;
+        let newUser = new Usuario(req.body);
+        newUser.save();
+        response ? res.json({token}) : res.json({error: '0', message: 'error'})
+      });
   }
-
-
 });
 
 module.exports = router;
