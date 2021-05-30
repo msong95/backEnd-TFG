@@ -47,4 +47,24 @@ router.post("/registro", async (req, res) => {
   }
 });
 
+router.post("/modificar", async (req, res) => {
+ //criptear clave
+  await bcrypt.hash(req.body.password, 10, (err, hass) => {
+    req.body.password = hass;
+    console.log("modificamos");
+
+    Usuario.updateOne({email:req.body.email},{username: req.body.username, password: req.body.password }, function(
+      error,result){
+        console.log(result);
+          if(error){
+            const token=null;
+            response ? res.json({token}) : res.json({error: '1'})
+          }else{
+            response ? res.json({result}) : res.json({error: '0', message: 'error'})
+          }
+      });
+  });
+});
+
+
 module.exports = router;
