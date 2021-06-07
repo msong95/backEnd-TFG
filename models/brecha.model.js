@@ -4,10 +4,11 @@ module.exports = {
 
     BrechaModel: new Schema(
       {
-        username: String,
+        email: String,
         id_brecha: String,
-        brecha: String,
-        fecha: Date
+        resultado: String,
+        solucion: String,
+        fecha: String
       },
       { timestamps: { createdAt: "created_at" } }
     )

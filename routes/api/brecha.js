@@ -9,7 +9,7 @@ const Brecha = mongoose.model('Brecha', BrechaModel);
 
 //Brecha.insertMany(brechasMock)
 
-router.get('/', async (req, res) => {
+router.get('/recuperarBrecha', async (req, res) => {
     try {
         const response = await Brecha.find({})
         res.json(response)
@@ -18,25 +18,12 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.post("/crearBrecha", async (req, res) => {
 
-router.post("/", async (req, res) => {
-    req.body.id = uuid;
-    //res.json(brechasMock)
-    //req.body.password = hass;
-    let newBrecha = new Brecha(brechasMock);
-    newBrecha
-      .save()
-      .then(() =>
-        res
-          .json({
-            message: "Brecha creada",
-            headers: req.headers,
-            body: req.body
-          })
-          .status(201)
-      )
-      .catch((error) => res.json({mensaje: "Error al crear una brecha", error}).status(400));
-
-  });
-
+    let newBrecha= new Brecha(req.body);
+    const token=newBrecha;
+     
+    newBrecha.save();
+    res.jsonp({token})
+});
 module.exports = router;
