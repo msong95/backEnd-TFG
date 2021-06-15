@@ -5,11 +5,13 @@ const usuariosRoute = require('./api/usuarios')
 const preguntasRoute = require('./api/preguntas')
 const authRoute = require('./api/auth')
 const brechaRoute = require('./api/brecha')
+const resultadoRoute = require('./api/resultado')
 
 router.use('/usuarios', usuariosRoute)
 router.use('/preguntas', preguntasRoute)
 router.use('/brecha', brechaRoute)
 router.use('/auth', authRoute)
+router.use('/resultado', resultadoRoute)
 
 module.exports = router
 

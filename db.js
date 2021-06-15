@@ -15,7 +15,8 @@ switch (process.env.ENVIROMENT) {
 mongoose
   .connect(url, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false,
   })
   .then(response => {
     if (response) console.log(`base de datos conectada, entorno -> ${process.env.ENVIROMENT} -> url: ${uri}`);
