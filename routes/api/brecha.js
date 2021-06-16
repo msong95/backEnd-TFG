@@ -10,12 +10,10 @@ const Brecha = mongoose.model('Brecha', BrechaModel);
 //Brecha.insertMany(brechasMock)
 
 router.get('/recuperarBrecha', async (req, res) => {
-    try {
+
         const response = await Brecha.find({})
         res.json(response)
-    } catch (error) {
-        res.json({error})
-    }
+
 });
 
 router.post("/crearBrecha", async (req, res) => {

@@ -6,8 +6,6 @@ const { ResultadoModel } = require('../../models/resultado.model');
 
 const Resultado = mongoose.model('Resultado', ResultadoModel);
 
-//Brecha.insertMany(brechasMock)
-
 router.get('/resultados', async (req, res) => {
     try {
         const response = await Resultado.find({})
