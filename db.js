@@ -19,7 +19,7 @@ mongoose
     useFindAndModify: false,
   })
   .then(response => {
-    if (response) console.log(`base de datos conectada, entorno -> ${process.env.ENVIROMENT} -> url: ${uri}`);
+    if (response) console.log(`base de datos conectada, entorno -> ${process.env.ENVIROMENT} -> url: ${url}`);
   })
   .catch(err => err ? console.error('error en la conexion a la base de datos') : null);
 

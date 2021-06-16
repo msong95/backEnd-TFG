@@ -47,10 +47,11 @@ router.post("/registro", async (req, res) => {
   }
 });
 
+/*
 router.post("/modificar", async (req, res) => {
 
   let body=req.body;
-  console.log(req.body)
+ // console.log(req.body)
   await bcrypt.hash(req.body.password, 10, (err, hass) => {
     req.body.password = hass;
     Usuario.findOneAndUpdate({email:body.email}, {$set: req.body}, function(error,info){
@@ -67,6 +68,29 @@ router.post("/modificar", async (req, res) => {
     })
   });
 });
+
+*/
+router.post("/modificar", async (req, res) => {
+
+  let body=req.body;
+ // console.log(req.body)
+  await bcrypt.hash(req.body.password, 10, (err, hass) => {
+    req.body.password = hass;
+    Usuario.findOneAndUpdate({email:body.email}, {$set: req.body}, function(error,info){
+      if(error){
+        res.json({
+          resultado: false,
+          msg: 'No se pudo modificar el cliente',
+          err
+      });
+      }else{
+        let newUser = new Usuario(req.body);
+        res.jsonp({newUser})
+      }
+    })
+  });
+});
+
 
 
 
