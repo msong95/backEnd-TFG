@@ -6,6 +6,7 @@ module.exports = {
       {
         email: String,
         id_brecha: String,
+        titulo: String,
         resultado: String,
         solucion: String,
         fecha: String
