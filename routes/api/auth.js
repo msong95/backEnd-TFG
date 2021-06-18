@@ -8,13 +8,15 @@ const bcrypt = require("bcryptjs");
 const jwt = require('jsonwebtoken')
 
 router.post("/login", async (req, res) => {
-  const response = await Usuario.findOne({ email: req.body.email }).exec();
-  console.log(response);
- 
-  if(response){
-    bcrypt.compare(req.body.password, response.password, (err, response) => {
-     const token = jwt.sign({ id: response.id, role: 'admin' } , 'olakease');
-      response ? res.json({token, usuario:req.body}) : res.json({error: '0'})
+  const user = await Usuario.findOne({ email: req.body.email }).exec();
+  console.log(user._doc);
+
+  if(user){
+    bcrypt.compare(req.body.password, user.password, (err, response) => {
+
+     const token = jwt.sign({ user: user._doc, role: 'admin' } , 'olakease');
+     response ? res.json({token, usuario:req.body}) : res.json({error: 'Usuario y/o contraseña incorrecta'})
+
       // response ? res.json({message: 'login correcto'}) : res.json({message: 'login incorrecto'})
     })
   }else{
@@ -25,45 +27,35 @@ router.post("/login", async (req, res) => {
 });
 
 router.post("/registro", async (req, res) => {
- 
+
   //buscamos si existe
   const response = await Usuario.findOne({ email: req.body.email }).exec();
   let body=req.body
   //si existe el usuario entonces no se puede registrar
   if(response){
     const token=null;
-    res.jsonp({token})
+    res.json({token})
     // en caso contrario si se puede
   }else{
-
       req.body.id = uuid;
       await bcrypt.hash(req.body.password, 10, (err, hass) => {
         req.body.password = hass;
         let newUser = new Usuario(req.body);
         const token=body;
         newUser.save();
-        res.jsonp({token})
+        res.json({token})
       });
   }
 });
 
 router.post("/modificar", async (req, res) => {
-
-  let body=req.body;
-  console.log(req.body)
   await bcrypt.hash(req.body.password, 10, (err, hass) => {
     req.body.password = hass;
-    Usuario.findOneAndUpdate({email:body.email}, {$set: req.body}, function(error,info){
-      if(error){
-        res.json({
-          resultado: false,
-          msg: 'No se pudo modificar el cliente',
-          err
-      });
-      }else{
-        let newUser = new Usuario(req.body);
-        res.jsonp({newUser})
-      }
+    Usuario.findByIdAndUpdate(req.body.id, req.body, (err, doc) => {
+        if(err) res.json({err}).status(400)
+        const token = jwt.sign({ user: doc, role: 'admin' } , 'olakease');
+
+        res.json({message: 'Usuario modificado', doc})
     })
   });
 });

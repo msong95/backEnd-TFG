@@ -20,8 +20,8 @@ router.post("/crearBrecha", async (req, res) => {
 
     let newBrecha= new Brecha(req.body);
     const token=newBrecha;
-     
+
     newBrecha.save();
-    res.jsonp({token})
+    res.json({token})
 });
 module.exports = router;
