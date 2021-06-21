@@ -9,7 +9,7 @@ const jwt = require('jsonwebtoken')
 
 router.post("/login", async (req, res) => {
   const user = await Usuario.findOne({ email: req.body.email }).exec();
-  console.log(user._doc);
+
 
   if(user){
     bcrypt.compare(req.body.password, user.password, (err, response) => {
@@ -56,7 +56,7 @@ router.post("/modificar", async (req, res) => {
         if(err) res.json({err}).status(400)
         const token = jwt.sign({ user: doc, role: 'admin' } , 'olakease');
 
-        res.json({message: 'Usuario modificado', doc})
+        res.json({message: 'Usuario modificado', token})
     })
   });
 });
