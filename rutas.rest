@@ -10,7 +10,7 @@ Content-Type: application/json
 
 {
     "email": "deivit@deivit.es",
-    "password":"123"
+    "password":"aaa"
 
 }
 
