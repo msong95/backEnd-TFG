@@ -48,7 +48,7 @@ router.post("/registro", async (req, res) => {
   }
 });
 
-/*
+
 router.post("/modificar", async (req, res) => {
   await bcrypt.hash(req.body.password, 10, (err, hass) => {
     req.body.password = hass;
@@ -61,8 +61,8 @@ router.post("/modificar", async (req, res) => {
   });
 });
 
-*/
-router.post("/modificar", async (req, res) => {
+
+/* router.post("/modificar", async (req, res) => {
 
   let body=req.body;
  // console.log(req.body)
@@ -81,7 +81,7 @@ router.post("/modificar", async (req, res) => {
       }
     })
   });
-});
+}); */
 
 
 
