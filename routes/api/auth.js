@@ -41,7 +41,8 @@ router.post("/registro", async (req, res) => {
       await bcrypt.hash(req.body.password, 10, (err, hass) => {
         req.body.password = hass;
         let newUser = new Usuario(req.body);
-        const token=body;
+        //const token=body;
+        const token = jwt.sign({ user: req.body, role: 'admin' } , 'olakease');
         newUser.save();
         res.json({token})
       });
