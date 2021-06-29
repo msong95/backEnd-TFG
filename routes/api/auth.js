@@ -9,19 +9,15 @@ const jwt = require('jsonwebtoken')
 
 router.post("/login", async (req, res) => {
   const user = await Usuario.findOne({ email: req.body.email }).exec();
-
-
   if(user){
     bcrypt.compare(req.body.password, user.password, (err, response) => {
 
      const token = jwt.sign({ user: user._doc, role: 'admin' } , 'olakease');
      response ? res.json({token, usuario:req.body}) : res.json({error: 'Usuario y/o contraseña incorrecta'})
-
-      // response ? res.json({message: 'login correcto'}) : res.json({message: 'login incorrecto'})
     })
   }else{
-    const token =null;
-      response ? res.json({token}) : res.json({error: '1'})
+    const token=null;
+    res.json({token})
   }
 
 });
